@@ -10,6 +10,7 @@ task :compile do
   puts "Compiling #{@root}..."
   compileStr = "#{@compiler} #{@options} #{@root}"
   system(compileStr + ' > output')
+  system(compileStr + ' > output')
 
   task(:findErrors).invoke('output')
   task(:clean).invoke
