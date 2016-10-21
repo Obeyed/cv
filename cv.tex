@@ -1,37 +1,46 @@
 %!TEX TS-program = xelatex
-%\documentclass[print]{friggeri-cv}
-\documentclass[]{friggeri-cv}
+\documentclass[print]{friggeri-cv}
+%\documentclass[]{friggeri-cv}
 
 \begin{document}
 \header{elias}{obeid}
-    {postgraduate student in computer science and engineering}
+    {master of science in computer science and engineering}
 
 % In the aside, each new line forces a line break
 \begin{aside}
   \section{about}
     Elias Khazen Obeid
     February 7th, 1991
-    Grøntoften 
-    2870 Dyssegård
-    Denmark
     ~
-    \textbf{mobile} 71 20 29 91
-    \href{mailto:ekobeid@gmail.com}{ekobeid@gmail.com}
-    \href{http://obeid.dk}{http://obeid.dk}
-    \href{https://www.facebook.com/eliaskhazenobeid}{fb://eliasobeid}
-    \href{https://www.linkedin.com/in/eliasobeid}{in://eliasobeid}
-    \href{https://github.com/Obeyed}{gh://eliasobeid}
+    Lake Shore Tower 1, Cluster Y, Jumeirah Lake Towers, Dubai
+    United Arab Emirates
+    %Grøntoften
+    %2870 Dyssegård
+    %Denmark
+    ~
+    %\textbf{mobile} +45 71 20 29 91
+    +971 50 179 8766
+    %\href{mailto:ekobeid@gmail.com}{ekobeid@gmail.com}
+    \href{mailto:elias@seez.co}{elias@seez.co}
+    \href{mailto:elias@munk.ai}{elias@munk.ai}
+    %\href{http://obeid.dk}{http://obeid.dk}
+    %\href{https://www.facebook.com/eliaskhazenobeid}{fb://eliasobeid}
+    \href{https://github.com/obeyed}{github.com/obeyed}
+    \href{https://www.linkedin.com/in/eliasobeid}{linkedin.com/eliasobeid}
   \section{language}
     trilingual danish/english/arabic
   \section{programming and markup}
     C, C++, C\#, CUDA, Java, JavaScript, Python, Ruby, Lua, 
-    SQL, NoSQL, 
+    SQL, NoSQL, ReQL, 
     Haskell (learning),
-    Git, SVN, \LaTeX{}, Unix,
-    Software engineering
+    Git, SVN, \LaTeX{}, Unix, Windows
   \section{main interests}
+    cryptology
     machine learning
     computer security
+    multi-agent system
+    artificial intelligence
+    software engineering
     software development
 \end{aside}
 
@@ -39,22 +48,19 @@
 
 \begin{entrylist}
   \entry
-    {since 2014}
-    {Postgraduate student {\normalfont in Computer Science and Engineering}\\}
+    {2014--2016}
+    {M.Sc. {\normalfont Computer Science and Engineering}}
     {The Technical University of Denmark}
-    {Four semesters (120 ECTS) of four months each --- 13- and 3-week courses per semester}
+    {Four semesters (120 ECTS) of four months each.
+	Master thesis with the topic of machine translation and natural language processing.}
   \entry
-    {2011–2014}
-    {B.Sc. {\normalfont in Computer Science}}
+    {2011--2014}
+    {B.Sc. {\normalfont Computer Science}}
     {The University of Aalborg}
-    {Six semesters (180 ECTS) of four months each --- one project and three courses per semester}
+    {Six semesters (180 ECTS) of four months each.
+	Bachelor project with the topic of genetic algorithms.}
   \entry
-    {2011–2011}
-    {Education in Firefighting}
-    {Danish Emergency Management Agency}
-    {Fire, Rescue, Environment and Communication}
-  \entry
-    {2007–2010}
+    {2007--2010}
     {Student}
     {The Technical Gymnasium of Aalborg}
     {Communication and Media}
@@ -69,25 +75,36 @@
 
 \begin{entrylist}
   \entry
-    {since 2015}
+    {since 2016}
+    {Backend architect}
+    {Seez}
+    {Main fields of responsibility are the backend and API architecture, data management, and data crawling. 
+	Furthermore, I partake in the development of artificially intelligent autonomous systems.}
+  \entry
+    {since 2016}
+    {Co-founder \& machine learning consultant}
+    {munk.ai}
+    {Startup company (in collaboration with co-authors of master thesis) which will provide API's for image recognition with a mission of providing generalized image recognition.}
+  \entry
+    {2015--2016}
     {Student developer}
     {Berlingske People A/S, Radio24syv}
-    {Development of website, API infrastructure, and other IT tools used internally. Mainly development with NodeJS with Express s, AngularJS, and C\#}
+    {Development of website, API infrastructure, and other IT tools used internally. Mainly development with NodeJS with ExpressJs, AngularJS, and C\#.}
   \entry
-    {2014-2015}
+    {2014--2015}
     {Student developer}
     {Falck Healthcare A/S}
-    {Development of a booking system for a service, that Falck Healthcare offers its clients. Mainly web development with Ruby on Rails}
+    {Development of a booking system for a service, that Falck Healthcare offers its clients. Mainly web development with Ruby on Rails.}
   \entry
     {08–12 2013}
     {Assistant teacher}
     {The University of Aalborg}
-    {Assitant teacher in imperative programming with C}
-  \entry
-    {2012–2014}
-    {Ambassador}
-    {The University of Aalborg}
-    {Ambassador for Computer Science}
+    {Assistant teacher in imperative programming with C.}
+%  \entry
+%    {2012--2014}
+%    {Ambassador}
+%    {The University of Aalborg}
+%    {Ambassador for Computer Science}
 %  \entry
 %    {08–11 2011}
 %    {Salesmen}
@@ -97,7 +114,7 @@
     {02–07 2011}
     {Private (national service)}
     {Danish Emergency Management Agency}
-    {Firefighting education and emergency duty}
+    {Firefighting education and emergency duty.}
 %  \entry
 %    {2010–2011}
 %    {Shop assistant}
@@ -110,11 +127,29 @@
 %    {Customer service, cleaning, cooking and delivery}
 \end{entrylist}
 
+\section{publications}
+
+\begin{entrylist}
+  \entry
+    {Oct 2016}
+    {Neural Machine Translation with Characters and Hierarchical Encoding\\}
+    {\href{https://arxiv.org/abs/1610.06550}{arxiv.org/abs/1610.06550}}
+    {We propose a model for translating between languages with a hierarchical architecture. It is fed with sequences of 
+    characters from a source language and produces a translated sequence of characters in a target language.
+    We argue that, by comparison to current state of the art models, this hierarchical architecture reduces computational 
+    complexity, and that it improves translation performance.}
+\end{entrylist}
+
 \section{other activity}
 
 \begin{entrylist}
   \entry
-    {2013–2014}
+    {2011--2011}
+    {Education in Firefighting}
+    {Danish Emergency Management Agency}
+    {Fire, Rescue, Environment and Communication.}
+  \entry
+    {2013--2014}
     {Member of the Board of Studies}
     {The University of Aalborg}
     {Discussions of applications of qualifications and exemptions, study lines, quality assurance of education and the like.}
@@ -133,10 +168,10 @@
 %  {The University of Aalborg}
 %  {Intruktor for new students}
   \entry
-    {2012–2014}
+    {2012--2014}
     {Volunteer mentor}
     {Danish Red Cross Youth}
-    {Part of a project \href{http://www.urk.dk/solskinsunge/}{Sunshine youth}, where we would arrange social events with the youth of a state school (Tornhøjskolen) in Eastern Aalborg.}
+    {A project called \href{http://www.urk.dk/solskinsunge/}{Sunshine youth}, with the purpose of motivating youngsters for an education in Aalborg (Denmark).}
 %  \entry
 %  {2011-2014}
 %  {Volunteer firefighter}
