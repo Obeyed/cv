@@ -1,6 +1,6 @@
 %!TEX TS-program = xelatex
-\documentclass[print]{friggeri-cv}
-%\documentclass[]{friggeri-cv}
+%\documentclass[print]{friggeri-cv}
+\documentclass[]{friggeri-cv}
 
 \begin{document}
 \header{elias}{obeid}
@@ -10,9 +10,9 @@
 \begin{aside}
   \section{about}
     Elias Khazen Obeid
-    February 7th, 1991
+    February, 1991
     ~
-    Lake Shore Tower 1, Cluster Y, Jumeirah Lake Towers, Dubai
+    Lakeshore Tower, JLT~(Cluster Y), Dubai
     United Arab Emirates
     %Grøntoften
     %2870 Dyssegård
@@ -29,19 +29,17 @@
     \href{https://www.linkedin.com/in/eliasobeid}{linkedin.com/eliasobeid}
   \section{language}
     trilingual danish/english/arabic
-  \section{programming and markup}
+  \section{programming, markup, and tools}
     C, C++, C\#, CUDA, Java, JavaScript, Python, Ruby, Lua, 
     SQL, NoSQL, ReQL, 
     Haskell (learning),
-    Git, SVN, \LaTeX{}, Unix, Windows
+    Git, SVN, Docker, Vim, Terminal, \LaTeX{}, Linux, Windows
   \section{main interests}
     cryptology
     machine learning
     computer security
     multi-agent system
-    artificial intelligence
     software engineering
-    software development
 \end{aside}
 
 \section{education}
@@ -76,25 +74,48 @@
 \begin{entrylist}
   \entry
     {since 2016}
-    {Backend architect}
+    {Software engineer}
     {Seez}
-    {Main fields of responsibility are the backend and API architecture, data management, and data crawling. 
-	Furthermore, I partake in the development of artificially intelligent autonomous systems.}
-  \entry
-    {since 2016}
-    {Co-founder \& machine learning consultant}
-    {munk.ai}
-    {Startup company (in collaboration with co-authors of master thesis) which will provide API's for image recognition with a mission of providing generalized image recognition.}
+    {
+      The founder of Seez has a vision of making it easier and more transparent to sell/buy a used car.
+      I am mainly in charge of the back-end architecture of the company.
+      I re-built the company's API with Flask (a python framework).
+      I maintain the servers, the file storage, and DNS, which is hosted by AWS. 
+      The API runs inside a Docker container, from which it serves data for the android and iOS apps.
+      The API is connected to a RethinkDB database.
+
+      I use Git and Dokku for easy version control and deployment of the API.
+      Moreover, in collaboration with my colleagues, we used Scrapy for data crawling.
+      With that data we were able to apply machine learning techniques to approximate prices of the used car market.
+	  }
+%  \entry
+%    {since 2016}
+%    {Co-founder \& machine learning consultant}
+%    {munk.ai}
+%    {
+%      Startup company (in collaboration with co-authors of master thesis) which will provide API's for image recognition with a mission of providing generalized image recognition.
+%    }
   \entry
     {2015--2016}
     {Student developer}
     {Berlingske People A/S, Radio24syv}
-    {Development of website, API infrastructure, and other IT tools used internally. Mainly development with NodeJS with ExpressJs, AngularJS, and C\#.}
+    {
+      Development of website, API infrastructure, and other IT tools used internally. 
+      Mainly development with NodeJS with ExpressJs, AngularJS, and C\#.
+      For serving the IT systems we used Heroku and custom local servers.
+
+      Moreover, some other systems had been outsourced to third party contractors.
+      On the custom local servers, we used git and Dokku for easy deployment and revision control of the developed code.
+      The services were connected to third party data sources along with a local MongoDB database.
+    }
   \entry
     {2014--2015}
     {Student developer}
     {Falck Healthcare A/S}
-    {Development of a booking system for a service, that Falck Healthcare offers its clients. Mainly web development with Ruby on Rails.}
+    {
+      Development of a booking system for a service, that Falck Healthcare offers its clients. 
+      Mainly web development with Ruby on Rails. The booking service stored data in a PostgreSQL database.
+    }
   \entry
     {08–12 2013}
     {Assistant teacher}
@@ -126,6 +147,8 @@
 %    {La Pronto Pizza, Aalborg}
 %    {Customer service, cleaning, cooking and delivery}
 \end{entrylist}
+
+\newpage
 
 \section{publications}
 
